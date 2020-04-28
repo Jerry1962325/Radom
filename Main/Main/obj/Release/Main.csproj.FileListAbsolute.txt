@@ -1,0 +1,11 @@
+E:\随机电影推荐\Main\Main\bin\Release\Movies.mdb
+E:\随机电影推荐\Main\Main\bin\Release\Main.exe.config
+E:\随机电影推荐\Main\Main\bin\Release\Main.exe
+E:\随机电影推荐\Main\Main\bin\Release\Main.pdb
+E:\随机电影推荐\Main\Main\obj\Release\Main.csprojAssemblyReference.cache
+E:\随机电影推荐\Main\Main\obj\Release\Main.Form1.resources
+E:\随机电影推荐\Main\Main\obj\Release\Main.Properties.Resources.resources
+E:\随机电影推荐\Main\Main\obj\Release\Main.csproj.GenerateResource.cache
+E:\随机电影推荐\Main\Main\obj\Release\Main.csproj.CoreCompileInputs.cache
+E:\随机电影推荐\Main\Main\obj\Release\Main.exe
+E:\随机电影推荐\Main\Main\obj\Release\Main.pdb

@@ -1,0 +1,8 @@
+E:\随机电影推荐\Reader\Reader\bin\Debug\Movies.mdb
+E:\随机电影推荐\Reader\Reader\bin\Debug\Reader.exe.config
+E:\随机电影推荐\Reader\Reader\bin\Debug\Reader.exe
+E:\随机电影推荐\Reader\Reader\bin\Debug\Reader.pdb
+E:\随机电影推荐\Reader\Reader\obj\Debug\Reader.csprojAssemblyReference.cache
+E:\随机电影推荐\Reader\Reader\obj\Debug\Reader.csproj.CoreCompileInputs.cache
+E:\随机电影推荐\Reader\Reader\obj\Debug\Reader.exe
+E:\随机电影推荐\Reader\Reader\obj\Debug\Reader.pdb

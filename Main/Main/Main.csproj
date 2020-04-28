@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71917247-BCC8-40D6-A230-2F1CAB84F43C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>M.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MoiRea.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="M.xsc">
+      <DependentUpon>M.xsd</DependentUpon>
+    </None>
+    <None Include="M.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>M.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="M.xss">
+      <DependentUpon>M.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Movies.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pic\1.jpg" />
+    <Content Include="pic\10.jpg" />
+    <Content Include="pic\100.jpg" />
+    <Content Include="pic\101.jpg" />
+    <Content Include="pic\102.jpg" />
+    <Content Include="pic\103.jpg" />
+    <Content Include="pic\104.jpg" />
+    <Content Include="pic\105.jpg" />
+    <Content Include="pic\106.jpg" />
+    <Content Include="pic\107.jpg" />
+    <Content Include="pic\108.jpg" />
+    <Content Include="pic\109.jpg" />
+    <Content Include="pic\11.jpg" />
+    <Content Include="pic\110.jpg" />
+    <Content Include="pic\111.jpg" />
+    <Content Include="pic\112.jpg" />
+    <Content Include="pic\113.jpg" />
+    <Content Include="pic\114.jpg" />
+    <Content Include="pic\115.jpg" />
+    <Content Include="pic\116.jpg" />
+    <Content Include="pic\117.jpg" />
+    <Content Include="pic\118.jpg" />
+    <Content Include="pic\119.jpg" />
+    <Content Include="pic\12.jpg" />
+    <Content Include="pic\120.jpg" />
+    <Content Include="pic\121.jpg" />
+    <Content Include="pic\122.jpg" />
+    <Content Include="pic\123.jpg" />
+    <Content Include="pic\124.jpg" />
+    <Content Include="pic\125.jpg" />
+    <Content Include="pic\126.jpg" />
+    <Content Include="pic\127.jpg" />
+    <Content Include="pic\128.jpg" />
+    <Content Include="pic\129.jpg" />
+    <Content Include="pic\13.jpg" />
+    <Content Include="pic\130.jpg" />
+    <Content Include="pic\131.jpg" />
+    <Content Include="pic\132.jpg" />
+    <Content Include="pic\133.jpg" />
+    <Content Include="pic\134.jpg" />
+    <Content Include="pic\135.jpg" />
+    <Content Include="pic\136.jpg" />
+    <Content Include="pic\137.jpg" />
+    <Content Include="pic\138.jpg" />
+    <Content Include="pic\139.jpg" />
+    <Content Include="pic\14.jpg" />
+    <Content Include="pic\140.jpg" />
+    <Content Include="pic\141.jpg" />
+    <Content Include="pic\142.jpg" />
+    <Content Include="pic\143.jpg" />
+    <Content Include="pic\144.jpg" />
+    <Content Include="pic\145.jpg" />
+    <Content Include="pic\146.jpg" />
+    <Content Include="pic\147.jpg" />
+    <Content Include="pic\148.jpg" />
+    <Content Include="pic\149.jpg" />
+    <Content Include="pic\15.jpg" />
+    <Content Include="pic\150.jpg" />
+    <Content Include="pic\151.jpg" />
+    <Content Include="pic\152.jpg" />
+    <Content Include="pic\153.jpg" />
+    <Content Include="pic\154.jpg" />
+    <Content Include="pic\155.jpg" />
+    <Content Include="pic\156.jpg" />
+    <Content Include="pic\157.jpg" />
+    <Content Include="pic\158.jpg" />
+    <Content Include="pic\159.jpg" />
+    <Content Include="pic\16.jpg" />
+    <Content Include="pic\160.jpg" />
+    <Content Include="pic\161.jpg" />
+    <Content Include="pic\162.jpg" />
+    <Content Include="pic\163.jpg" />
+    <Content Include="pic\164.jpg" />
+    <Content Include="pic\165.jpg" />
+    <Content Include="pic\166.jpg" />
+    <Content Include="pic\167.jpg" />
+    <Content Include="pic\168.jpg" />
+    <Content Include="pic\169.jpg" />
+    <Content Include="pic\17.jpg" />
+    <Content Include="pic\170.jpg" />
+    <Content Include="pic\171.jpg" />
+    <Content Include="pic\172.jpg" />
+    <Content Include="pic\173.jpg" />
+    <Content Include="pic\174.jpg" />
+    <Content Include="pic\175.jpg" />
+    <Content Include="pic\176.jpg" />
+    <Content Include="pic\177.jpg" />
+    <Content Include="pic\178.jpg" />
+    <Content Include="pic\179.jpg" />
+    <Content Include="pic\18.jpg" />
+    <Content Include="pic\180.jpg" />
+    <Content Include="pic\181.jpg" />
+    <Content Include="pic\182.jpg" />
+    <Content Include="pic\183.jpg" />
+    <Content Include="pic\184.jpg" />
+    <Content Include="pic\185.jpg" />
+    <Content Include="pic\186.jpg" />
+    <Content Include="pic\187.jpg" />
+    <Content Include="pic\188.jpg" />
+    <Content Include="pic\189.jpg" />
+    <Content Include="pic\19.jpg" />
+    <Content Include="pic\190.jpg" />
+    <Content Include="pic\191.jpg" />
+    <Content Include="pic\192.jpg" />
+    <Content Include="pic\193.jpg" />
+    <Content Include="pic\194.jpg" />
+    <Content Include="pic\195.jpg" />
+    <Content Include="pic\196.jpg" />
+    <Content Include="pic\197.jpg" />
+    <Content Include="pic\198.jpg" />
+    <Content Include="pic\199.jpg" />
+    <Content Include="pic\2.jpg" />
+    <Content Include="pic\20.jpg" />
+    <Content Include="pic\200.jpg" />
+    <Content Include="pic\201.jpg" />
+    <Content Include="pic\202.jpg" />
+    <Content Include="pic\203.jpg" />
+    <Content Include="pic\204.jpg" />
+    <Content Include="pic\205.jpg" />
+    <Content Include="pic\206.jpg" />
+    <Content Include="pic\207.jpg" />
+    <Content Include="pic\208.jpg" />
+    <Content Include="pic\209.jpg" />
+    <Content Include="pic\21.jpg" />
+    <Content Include="pic\210.jpg" />
+    <Content Include="pic\211.jpg" />
+    <Content Include="pic\212.jpg" />
+    <Content Include="pic\213.jpg" />
+    <Content Include="pic\214.jpg" />
+    <Content Include="pic\215.jpg" />
+    <Content Include="pic\216.jpg" />
+    <Content Include="pic\217.jpg" />
+    <Content Include="pic\218.jpg" />
+    <Content Include="pic\219.jpg" />
+    <Content Include="pic\22.jpg" />
+    <Content Include="pic\220.jpg" />
+    <Content Include="pic\221.jpg" />
+    <Content Include="pic\222.jpg" />
+    <Content Include="pic\223.jpg" />
+    <Content Include="pic\224.jpg" />
+    <Content Include="pic\225.jpg" />
+    <Content Include="pic\226.jpg" />
+    <Content Include="pic\227.jpg" />
+    <Content Include="pic\228.jpg" />
+    <Content Include="pic\229.jpg" />
+    <Content Include="pic\23.jpg" />
+    <Content Include="pic\230.jpg" />
+    <Content Include="pic\231.jpg" />
+    <Content Include="pic\232.jpg" />
+    <Content Include="pic\233.jpg" />
+    <Content Include="pic\234.jpg" />
+    <Content Include="pic\235.jpg" />
+    <Content Include="pic\236.jpg" />
+    <Content Include="pic\237.jpg" />
+    <Content Include="pic\238.jpg" />
+    <Content Include="pic\239.jpg" />
+    <Content Include="pic\24.jpg" />
+    <Content Include="pic\240.jpg" />
+    <Content Include="pic\241.jpg" />
+    <Content Include="pic\242.jpg" />
+    <Content Include="pic\243.jpg" />
+    <Content Include="pic\244.jpg" />
+    <Content Include="pic\245.jpg" />
+    <Content Include="pic\246.jpg" />
+    <Content Include="pic\247.jpg" />
+    <Content Include="pic\248.jpg" />
+    <Content Include="pic\249.jpg" />
+    <Content Include="pic\25.jpg" />
+    <Content Include="pic\250.jpg" />
+    <Content Include="pic\26.jpg" />
+    <Content Include="pic\27.jpg" />
+    <Content Include="pic\28.jpg" />
+    <Content Include="pic\29.jpg" />
+    <Content Include="pic\3.jpg" />
+    <Content Include="pic\30.jpg" />
+    <Content Include="pic\31.jpg" />
+    <Content Include="pic\32.jpg" />
+    <Content Include="pic\33.jpg" />
+    <Content Include="pic\34.jpg" />
+    <Content Include="pic\35.jpg" />
+    <Content Include="pic\36.jpg" />
+    <Content Include="pic\37.jpg" />
+    <Content Include="pic\38.jpg" />
+    <Content Include="pic\39.jpg" />
+    <Content Include="pic\4.jpg" />
+    <Content Include="pic\40.jpg" />
+    <Content Include="pic\41.jpg" />
+    <Content Include="pic\42.jpg" />
+    <Content Include="pic\43.jpg" />
+    <Content Include="pic\44.jpg" />
+    <Content Include="pic\45.jpg" />
+    <Content Include="pic\46.jpg" />
+    <Content Include="pic\47.jpg" />
+    <Content Include="pic\48.jpg" />
+    <Content Include="pic\49.jpg" />
+    <Content Include="pic\5.jpg" />
+    <Content Include="pic\50.jpg" />
+    <Content Include="pic\51.jpg" />
+    <Content Include="pic\52.jpg" />
+    <Content Include="pic\53.jpg" />
+    <Content Include="pic\54.jpg" />
+    <Content Include="pic\55.jpg" />
+    <Content Include="pic\56.jpg" />
+    <Content Include="pic\57.jpg" />
+    <Content Include="pic\58.jpg" />
+    <Content Include="pic\59.jpg" />
+    <Content Include="pic\6.jpg" />
+    <Content Include="pic\60.jpg" />
+    <Content Include="pic\61.jpg" />
+    <Content Include="pic\62.jpg" />
+    <Content Include="pic\63.jpg" />
+    <Content Include="pic\64.jpg" />
+    <Content Include="pic\65.jpg" />
+    <Content Include="pic\66.jpg" />
+    <Content Include="pic\67.jpg" />
+    <Content Include="pic\68.jpg" />
+    <Content Include="pic\69.jpg" />
+    <Content Include="pic\7.jpg" />
+    <Content Include="pic\70.jpg" />
+    <Content Include="pic\71.jpg" />
+    <Content Include="pic\72.jpg" />
+    <Content Include="pic\73.jpg" />
+    <Content Include="pic\74.jpg" />
+    <Content Include="pic\75.jpg" />
+    <Content Include="pic\76.jpg" />
+    <Content Include="pic\77.jpg" />
+    <Content Include="pic\78.jpg" />
+    <Content Include="pic\79.jpg" />
+    <Content Include="pic\8.jpg" />
+    <Content Include="pic\80.jpg" />
+    <Content Include="pic\81.jpg" />
+    <Content Include="pic\82.jpg" />
+    <Content Include="pic\83.jpg" />
+    <Content Include="pic\84.jpg" />
+    <Content Include="pic\85.jpg" />
+    <Content Include="pic\86.jpg" />
+    <Content Include="pic\87.jpg" />
+    <Content Include="pic\88.jpg" />
+    <Content Include="pic\89.jpg" />
+    <Content Include="pic\9.jpg" />
+    <Content Include="pic\90.jpg" />
+    <Content Include="pic\91.jpg" />
+    <Content Include="pic\92.jpg" />
+    <Content Include="pic\93.jpg" />
+    <Content Include="pic\94.jpg" />
+    <Content Include="pic\95.jpg" />
+    <Content Include="pic\96.jpg" />
+    <Content Include="pic\97.jpg" />
+    <Content Include="pic\98.jpg" />
+    <Content Include="pic\99.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
